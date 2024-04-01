@@ -10,6 +10,6 @@ public class ErrorMessage {
     public static final String AGE_CALCULATED_INCORRECTLY ="Age calculated incorrectly. Expected: ";
     public static final String BMI_CALCULATED_INCORRECTLY ="BMI calculated incorrectly. Expected: ";
     public static final String DATE_CALCULATED_INCORRECTLY ="Current Date incorrectly";
-    public static final String FUTURE_DATE_ENABLE ="The future date is disabled in the datepicker.";
+    public static final String FUTURE_DATE_DISABLE ="The future date is disabled in the datepicker.";
     public static final String UNABLE_TO_LAUNCH ="unable to launch the browser";
 }

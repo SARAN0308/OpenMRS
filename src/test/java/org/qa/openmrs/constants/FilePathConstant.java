@@ -2,9 +2,7 @@ package org.qa.openmrs.constants;
 
 public class FilePathConstant {
     public static String configPath = "./config.properties";
-
     public static String locatorPath = "./src/test/resources/locators/";
-
     public static String testDataPath = "./src/test/resources/testdata/";
 
     public static final String loginPageLocators = locatorPath + "loginPage.properties";

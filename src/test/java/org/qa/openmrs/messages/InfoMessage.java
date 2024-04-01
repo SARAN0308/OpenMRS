@@ -84,7 +84,7 @@ public class InfoMessage {
     public static final String SCREENSHOT_VITAL_ATTACH_UPLOAD ="Captured Screenshot on vitals,attachment upload";
     public static final String CLICK_ADD_PAST_VISIT = "clicked on Add Past visit button";
     public static final String SCREENSHOT_ADD_PAST_VISIT ="Captured screenshot on add past visit";
-    public static final String FUTURE_DATE_DISABLE ="The future date is disabled in the datepicker.";
+    public static final String FUTURE_DATE_ENABLE ="The future date is Enabled in the datepicker.";
     public static final String CLICK_CANCEL ="Clicked on Cancel Button";
     public static final String PATIENT_ID ="Patient Id ";
     public static final String CLICK_DELETE_PATIENT ="Clicked on Delete Patient Button";

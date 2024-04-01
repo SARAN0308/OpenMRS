@@ -10,12 +10,17 @@ import org.qa.openmrs.dataprovider.PropertyParser;
 import org.qa.openmrs.messages.ErrorMessage;
 import org.qa.openmrs.messages.InfoMessage;
 import org.qa.openmrs.messages.VerifyMessage;
+
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.nio.file.LinkOption;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
+
 import static org.qa.openmrs.base.BaseTest.driver;
 import static org.qa.openmrs.constants.Timeout.*;
 import static org.qa.openmrs.pageaction.RegisterPatientPage.confirmRightButton;
@@ -31,12 +36,13 @@ public class PatientDetailsPage {
      * used to verify age calculated based on date of birth
      * used to click start visit and click on attachment to upload file
      * used to verify toaster message of successful attachment
+     *
      * @param fileName
      * @ author saran
      */
-    public void verifyPatientDetailsAndUploadAttachment(String fileName){
+    public void verifyPatientDetailsAndUploadAttachment(String fileName) {
 
-        verifyString(patientDetailsPageTestData.getPropertyValue("actualPatientPageTitle"),driver.getTitle(), VerifyMessage.VERIFY_PATIENT_PAGE_TITLE);
+        verifyString(patientDetailsPageTestData.getPropertyValue("actualPatientPageTitle"), driver.getTitle(), VerifyMessage.VERIFY_PATIENT_PAGE_TITLE);
 
         readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("dateOfBirth"))));
         String dobString = patientDetailsPageTestData.getPropertyValue("expectedDateOfBirth");
@@ -49,13 +55,13 @@ public class PatientDetailsPage {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(patientDetailsPageTestData.getPropertyValue("dateTimePattern"));
         String formattedDob = dob.format(formatter);
 
-        String formattedAge = String.format(patientDetailsPageTestData.getPropertyValue("ageFormat"), years, formattedDob);
+        String formattedAge = String.format(patientDetailsPageTestData.getPropertyValue("ageFormat"), years," " +formattedDob);
 
         int expectedYears = Integer.parseInt(patientDetailsPageTestData.getPropertyValue("expectedAge"));
         if (years == expectedYears && formattedAge.equals(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("dateOfBirth")))))) {
             logger.info(VerifyMessage.VERIFY_AGE_CALCULATE + formattedAge);
         } else {
-            logger.error(ErrorMessage.AGE_CALCULATED_INCORRECTLY + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("dateOfBirth"))))  + formattedAge);
+            logger.error(ErrorMessage.AGE_CALCULATED_INCORRECTLY + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("dateOfBirth")))) + formattedAge);
         }
         logger.info(InfoMessage.VERIFIED_AGE);
 
@@ -73,8 +79,8 @@ public class PatientDetailsPage {
         Robot robot = null;
         try {
             robot = new Robot();
-        } catch (AWTException e) {
-            throw new RuntimeException(e);
+        } catch (AWTException awtException) {
+            throw new RuntimeException(awtException);
         }
         WebElement element = driver.findElement(By.id(patientDetailsPageLocator.getPropertyValue("dropFile")));
         element.click();
@@ -98,7 +104,7 @@ public class PatientDetailsPage {
 
         String captionText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("caption")))),
                 patientDetailsPageTestData.getPropertyValue("caption"));
-        logger.info(InfoMessage.ENTER_CAPTION +(captionText)+ InfoMessage.TEXT_BOX);
+        logger.info(InfoMessage.ENTER_CAPTION + (captionText) + InfoMessage.TEXT_BOX);
 
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_UPLOAD_FILE);
@@ -109,21 +115,21 @@ public class PatientDetailsPage {
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_TOASTER_MESSAGE);
 
-        verifyString(patientDetailsPageTestData.getPropertyValue("toasterMessage"),readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("toasterMessage"))))),VerifyMessage.VERIFY_TOASTER_MESSAGE);
+        verifyString(patientDetailsPageTestData.getPropertyValue("toasterMessage"), readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("toasterMessage"))))), VerifyMessage.VERIFY_TOASTER_MESSAGE);
 
         patientDetailsScreen();
 
-        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("verifyAttachment")))),true,VerifyMessage.VERIFY_DISPLAYED_ATTACHMENT);
+        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("verifyAttachment")))), true, VerifyMessage.VERIFY_DISPLAYED_ATTACHMENT);
 
         String formattedCurrentDate = currentDate.format(formatter);
         readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate"))));
 
         if (formattedCurrentDate.equals(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))))) {
-            logger.info(VerifyMessage.VERIFY_AGE_CALCULATE+ formattedCurrentDate);
+            logger.info(VerifyMessage.VERIFY_AGE_CALCULATE + formattedCurrentDate);
         } else {
-            logger.error(ErrorMessage.AGE_CALCULATED_INCORRECTLY + formattedCurrentDate  + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
+            logger.error(ErrorMessage.AGE_CALCULATED_INCORRECTLY + formattedCurrentDate + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
         }
-        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("attachmentUpload")))),true,VerifyMessage.VERIFY_RECENT_VISIT_CURRENT_DATE);
+        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("attachmentUpload")))), true, VerifyMessage.VERIFY_RECENT_VISIT_CURRENT_DATE);
 
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_ATTACHMENT_SESSION);
@@ -131,9 +137,10 @@ public class PatientDetailsPage {
 
     /**
      * This method is used to click start visit and start visit confirm button
+     *
      * @ author saran
      */
-    public void startVisitConfirmButton(){
+    public void startVisitConfirmButton() {
         click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("startVisitButton"))));
         logger.info(InfoMessage.CLICK_START_VISIT);
 
@@ -143,9 +150,10 @@ public class PatientDetailsPage {
 
     /**
      * This method is used to click start visit and start visit confirm button
+     *
      * @ author saran
      */
-    public static void patientDetailsScreen(){
+    public static void patientDetailsScreen() {
         click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("patientLinkButton"))));
         logger.info(InfoMessage.CLICK_PATIENT_LINK);
     }
@@ -155,10 +163,11 @@ public class PatientDetailsPage {
      * used to click start visit and vitals button
      * used to enter height,weight and calculated BMI
      * used to click on save form and vitals save button
+     *
      * @param fileName
      * @ author saran
      */
-    public void verifyCalculatedBmi(String fileName){
+    public void verifyCalculatedBmi(String fileName) {
 
         click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("endVisitButton"))));
         logger.info(InfoMessage.CLICK_END_VISIT);
@@ -175,23 +184,27 @@ public class PatientDetailsPage {
 
         String heightText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("height")))),
                 patientDetailsPageTestData.getPropertyValue("height"));
-        logger.info(InfoMessage.ENTER_HEIGHT+(heightText)+InfoMessage.TEXT_BOX);
+        logger.info(InfoMessage.ENTER_HEIGHT + (heightText) + InfoMessage.TEXT_BOX);
         confirmRightButton();
 
         String weightText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("weight")))),
                 patientDetailsPageTestData.getPropertyValue("weight"));
-        logger.info(InfoMessage.ENTER_WEIGHT+(weightText)+InfoMessage.TEXT_BOX);
+        logger.info(InfoMessage.ENTER_WEIGHT + (weightText) + InfoMessage.TEXT_BOX);
         confirmRightButton();
 
-        readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi"))));
+        double heightInCm = Double.parseDouble(heightText.replace("\"", ""));
+
+        double weightInKg = Double.parseDouble(weightText.replace("\"", ""));
+
+        double heightInMeters = heightInCm / 100.0;
 
         double expectedBMI = weightInKg / (heightInMeters * heightInMeters);
 
-        double displayedBMIValue = Double.parseDouble( readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
+        double displayedBMIValue = Double.parseDouble(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
         if (Math.abs(displayedBMIValue - expectedBMI) < 0.1) {
-            logger.info(VerifyMessage.VERIFY_BMI +  readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
+            logger.info(VerifyMessage.VERIFY_BMI + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
         } else {
-            logger.error(ErrorMessage.BMI_CALCULATED_INCORRECTLY + expectedBMI  + displayedBMIValue);
+            logger.error(ErrorMessage.BMI_CALCULATED_INCORRECTLY + expectedBMI + displayedBMIValue);
         }
 
         screenShot(fileName);
@@ -214,7 +227,7 @@ public class PatientDetailsPage {
      * @param fileName
      * @ author saran
      */
-    public void verifyEndMergeAddPastVisit(String fileName){
+    public void verifyEndMergeAddPastVisit(String fileName) {
         click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("vitalsEndVisitButton"))));
         logger.info(InfoMessage.CLICK_END_VISIT);
 
@@ -226,10 +239,13 @@ public class PatientDetailsPage {
 
         try {
             Thread.sleep(Max_WAIT);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        } catch (InterruptedException interruptedException) {
+            throw new RuntimeException(interruptedException);
         }
+
         click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("patientDetailScreen"))));
+        logger.info(InfoMessage.PATIENT_DETAIL_SCREEN);
+
         logger.info(InfoMessage.PATIENT_DETAIL_SCREEN);
 
         LocalDate currentDate = LocalDate.now();
@@ -241,9 +257,9 @@ public class PatientDetailsPage {
         if (formattedCurrentDate.equals(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))))) {
             logger.info(VerifyMessage.VERIFY_RECENT_VISIT_CURRENT_DATE + formattedCurrentDate);
         } else {
-            logger.error(ErrorMessage.DATE_CALCULATED_INCORRECTLY + formattedCurrentDate  + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
+            logger.error(ErrorMessage.DATE_CALCULATED_INCORRECTLY + formattedCurrentDate + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
         }
-        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("vitalTag")))),true,VerifyMessage.VERIFY_VITAL_TAG);
+        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("vitalTag")))), true, VerifyMessage.VERIFY_VITAL_TAG);
 
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_RECENT_VISIT_VITAL_TAG);
@@ -270,10 +286,10 @@ public class PatientDetailsPage {
         if (formattedCurrentDate.equals(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))))) {
             logger.info(VerifyMessage.VERIFY_RECENT_VISIT_CURRENT_DATE + formattedCurrentDate);
         } else {
-           logger.error(ErrorMessage.DATE_CALCULATED_INCORRECTLY + formattedCurrentDate + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
+            logger.error(ErrorMessage.DATE_CALCULATED_INCORRECTLY + formattedCurrentDate + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("recentVisitDate")))));
         }
 
-        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("vitalAttachment")))),true,VerifyMessage.VERIFY_DISPLAYED_ATTACHMENT);
+        verifyBoolean(isDisplayed(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("vitalAttachment")))), true, VerifyMessage.VERIFY_DISPLAYED_ATTACHMENT);
 
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_VITAL_ATTACH_UPLOAD);
@@ -284,63 +300,59 @@ public class PatientDetailsPage {
         screenShot(fileName);
         logger.info(InfoMessage.SCREENSHOT_ADD_PAST_VISIT);
 
-        WebElement datepicker = driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("datePicker")));
+        List<WebElement> datePicker = driver.findElements(By.xpath(patientDetailsPageLocator.getPropertyValue("datePicker")));
+            for (WebElement date : datePicker) {
+                String isFutureDatesDisabled = date.getAttribute("disabled");
+                if (isFutureDatesDisabled != null && isFutureDatesDisabled.equals("false")) {
+                    logger.info(InfoMessage.FUTURE_DATE_ENABLE);
+                } else {
+                    logger.error(ErrorMessage.FUTURE_DATE_DISABLE);
+                }
+                break;
+            }
 
-        LocalDate futureDate = currentDate.plusMonths(1);
-
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(patientDetailsPageTestData.getPropertyValue("datePattern"));
-        String futureDateString = futureDate.format(dateTimeFormatter);
-
-        ((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1]", datepicker, futureDateString);
-
-        String selectedDate = datepicker.getAttribute("value");
-        if (!selectedDate.equals(futureDateString)) {
-            logger.info(InfoMessage.FUTURE_DATE_DISABLE);
-        } else {
-            logger.error(ErrorMessage.FUTURE_DATE_ENABLE);
+            click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("cancelButton"))));
+            logger.info(InfoMessage.CLICK_CANCEL);
         }
-
-        click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("cancelButton"))));
-        logger.info(InfoMessage.CLICK_CANCEL);
-    }
 
     /**
      * This method is used to get patientId and click delete patient
      * used to verify deleted patient id in matched records
+     *
      * @param fileName
      * @author saran
      */
-    public void verifyDeletedPatientID(String reason,String fileName){
+    public void verifyDeletedPatientID(String reason, String fileName) {
 
-            String patientId = readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("patientId"))));
-            logger.info(InfoMessage.PATIENT_ID +(patientId));
+        String patientId = readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("patientId"))));
+        logger.info(InfoMessage.PATIENT_ID + (patientId));
 
-            click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("deletePatientButton"))));
-            logger.info(InfoMessage.CLICK_DELETE_PATIENT);
+        click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("deletePatientButton"))));
+        logger.info(InfoMessage.CLICK_DELETE_PATIENT);
 
-            screenShot(fileName);
-            logger.info(InfoMessage.SCREENSHOT_DELETE_PATIENT);
+        screenShot(fileName);
+        logger.info(InfoMessage.SCREENSHOT_DELETE_PATIENT);
 
-            String reasonText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("reason")))),
-                    patientDetailsPageTestData.getPropertyValue(reason));
-            logger.info(InfoMessage.ENTER_REASON+(reasonText)+InfoMessage.TEXT_BOX);
+        String reasonText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("reason")))),
+                patientDetailsPageTestData.getPropertyValue(reason));
+        logger.info(InfoMessage.ENTER_REASON + (reasonText) + InfoMessage.TEXT_BOX);
 
-            click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("deletePatientConfirmButton"))));
-            logger.info(InfoMessage.CLICK_DELETE_PATIENT_CONFIRM);
+        click(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("deletePatientConfirmButton"))));
+        logger.info(InfoMessage.CLICK_DELETE_PATIENT_CONFIRM);
 
-            verifyString(patientDetailsPageTestData.getPropertyValue("patientToastMessage"),readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("deleteToasterMessage"))))),VerifyMessage.VERIFY_TOASTER_MESSAGE);
+        verifyString(patientDetailsPageTestData.getPropertyValue("patientToastMessage"), readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("deleteToasterMessage"))))), VerifyMessage.VERIFY_TOASTER_MESSAGE);
 
-            screenShot(fileName);
-            logger.info(InfoMessage.SCREENSHOT_DELETE_PATIENT);
+        screenShot(fileName);
+        logger.info(InfoMessage.SCREENSHOT_DELETE_PATIENT);
 
-            String patientIdText= enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("patientIdSearch")))),
-                    patientId);
-            logger.info(InfoMessage.PATIENT_ID +(patientIdText)+InfoMessage.TEXT_BOX);
+        String patientIdText = enterText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue(("patientIdSearch")))),
+                patientId);
+        logger.info(InfoMessage.PATIENT_ID + (patientIdText) + InfoMessage.TEXT_BOX);
 
-            screenShot(fileName);
-            logger.info(InfoMessage.SCREENSHOT_MATCH_RECORD);
+        screenShot(fileName);
+        logger.info(InfoMessage.SCREENSHOT_MATCH_RECORD);
 
-            verifyString(patientDetailsPageTestData.getPropertyValue("matchRecord"),readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("noMatchingRecords")))),VerifyMessage.VERIFY_MATCH_FOUND);
-        }
+        verifyString(patientDetailsPageTestData.getPropertyValue("matchRecord"), readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("noMatchingRecords")))), VerifyMessage.VERIFY_MATCH_FOUND);
     }
+}
 
