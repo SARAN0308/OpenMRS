@@ -14,6 +14,8 @@ import org.qa.openmrs.messages.InfoMessage;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
 import java.time.Duration;
 
 

@@ -199,9 +199,12 @@ public class PatientDetailsPage {
         double heightInMeters = heightInCm / 100.0;
 
         double expectedBMI = weightInKg / (heightInMeters * heightInMeters);
+        int expectedBMIValue = (int) expectedBMI;
 
-        double displayedBMIValue = Double.parseDouble(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
-        if (Math.abs(displayedBMIValue - expectedBMI) < 0.1) {
+        double displayedBMI = Double.parseDouble(readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
+        int displayedBMIValue = (int) displayedBMI;
+
+        if (displayedBMIValue == expectedBMIValue) {
             logger.info(VerifyMessage.VERIFY_BMI + readText(driver.findElement(By.xpath(patientDetailsPageLocator.getPropertyValue("calculatedBmi")))));
         } else {
             logger.error(ErrorMessage.BMI_CALCULATED_INCORRECTLY + expectedBMI + displayedBMIValue);

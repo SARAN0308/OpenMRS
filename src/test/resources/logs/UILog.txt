@@ -6733,3 +6733,553 @@ Session ID: 73bff38b287ff855ea515d32da723eab
 2024-04-01 22:56:28,009 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100JL2in the textBox successfully
 2024-04-01 22:56:28,159 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
 2024-04-01 22:56:29,236 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Pass :: Actual Result :No matching records found :: : Expected Result :No matching records found
+2024-04-01 23:26:50,621 - org.qa.openmrs.base.BaseTest -INFO - Launching the chromebrowser
+2024-04-01 23:26:50,625 - org.qa.openmrs.base.BaseTest -INFO - ...Launch the OpenMRS application...
+2024-04-01 23:26:58,723 - org.qa.openmrs.base.BaseTest -INFO - Redirected to the https://qa-refapp.openmrs.org/openmrs/login.htm
+2024-04-01 23:26:58,990 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered UsernameAdminin the textBox successfully
+2024-04-01 23:26:59,241 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered PasswordAdmin123in the textBox successfully
+2024-04-01 23:26:59,350 - org.qa.openmrs.pageaction.LoginPage -INFO - Randomly Picked Location Session
+2024-04-01 23:26:59,533 - org.qa.openmrs.pageaction.LoginPage -INFO - Captured Screenshot For Login PageLoginPage
+2024-04-01 23:27:03,312 - org.qa.openmrs.pageaction.LoginPage -INFO - Clicked On Login Button
+2024-04-01 23:27:03,326 - org.qa.openmrs.utils.ActionElement -INFO - HomePage Title Verified Successfully: Pass :: Actual Result :Home :: : Expected Result :Home
+2024-04-01 23:27:03,327 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Verified and it's redirected to DashBoard Page 
+2024-04-01 23:27:03,535 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Captured Screenshot For DashBoard PageDashBoardPage
+2024-04-01 23:27:11,174 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Clicked Register a Patient Button
+2024-04-01 23:27:11,316 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered GiveNamevvin the textBox successfully
+2024-04-01 23:27:11,485 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered FamilyNamehhin the textBox successfully
+2024-04-01 23:27:11,752 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Given & Family NameregisterPatient
+2024-04-01 23:27:11,987 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:12,136 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected gender by select class
+2024-04-01 23:27:12,333 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:12,506 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for GenderregisterPatient
+2024-04-01 23:27:16,218 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthDay10in the textBox successfully
+2024-04-01 23:27:16,384 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected BirthMonth by select class
+2024-04-01 23:27:16,542 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthYear2000in the textBox successfully
+2024-04-01 23:27:16,790 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Date of BirthregisterPatient
+2024-04-01 23:27:17,027 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:17,240 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered Address13B Blockin the textBox successfully
+2024-04-01 23:27:17,442 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CityNewYorkin the textBox successfully
+2024-04-01 23:27:17,589 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered StateNYin the textBox successfully
+2024-04-01 23:27:17,768 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CountryUSin the textBox successfully
+2024-04-01 23:27:17,969 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PostalCode1022in the textBox successfully
+2024-04-01 23:27:18,129 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for AddressregisterPatient
+2024-04-01 23:27:18,342 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:18,567 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PhoneNumber9988776655in the textBox successfully
+2024-04-01 23:27:18,773 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for PhoneNumberregisterPatient
+2024-04-01 23:27:18,998 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:19,257 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:27:19,257 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - ..........Register Patient Verification.........
+2024-04-01 23:27:19,300 - org.qa.openmrs.utils.ActionElement -INFO - Given Name is verified Successfully: Pass :: Actual Result : vv, hh :: : Expected Result : vv, hh
+2024-04-01 23:27:19,339 - org.qa.openmrs.utils.ActionElement -INFO - Gender is verified Successfully: Pass :: Actual Result : Male :: : Expected Result : Male
+2024-04-01 23:27:19,371 - org.qa.openmrs.utils.ActionElement -INFO - Date of Birth is verified Successfully: Pass :: Actual Result : 10, March, 2000 :: : Expected Result : 10, March, 2000
+2024-04-01 23:27:19,403 - org.qa.openmrs.utils.ActionElement -INFO - Address is verified Successfully: Pass :: Actual Result : 13B Block, NewYork, NY, US, 1022 :: : Expected Result : 13B Block, NewYork, NY, US, 1022
+2024-04-01 23:27:19,450 - org.qa.openmrs.utils.ActionElement -INFO - PhoneNumber is verified Successfully: Pass :: Actual Result : 9988776655 :: : Expected Result : 9988776655
+2024-04-01 23:27:19,606 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured screenshot for verify register patient
+2024-04-01 23:27:19,819 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Register Patient Submit Button
+2024-04-01 23:27:19,837 - org.qa.openmrs.utils.ActionElement -INFO - Patient Page Title Is Verified Successfully: Pass :: Actual Result :OpenMRS Electronic Medical Record :: : Expected Result :OpenMRS Electronic Medical Record
+2024-04-01 23:27:31,405 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 24 year(s) ( 10.Mar.2000)
+2024-04-01 23:27:31,405 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Verified the age is Calculated based on Date of Birth
+2024-04-01 23:27:31,569 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - captured screenshot patient details pageattachmentUploadFile
+2024-04-01 23:27:31,825 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-01 23:27:32,054 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-01 23:27:39,690 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Attachment
+2024-04-01 23:27:39,838 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of AttachmentattachmentUploadFile
+2024-04-01 23:27:52,202 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Uploaded a filejava.awt.datatransfer.StringSelection@54d8c20d
+2024-04-01 23:27:52,415 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered captionTestingin the textBox successfully
+2024-04-01 23:27:52,611 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of uploaded file
+2024-04-01 23:27:52,865 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on upload file button
+2024-04-01 23:27:53,035 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of Toaster Message
+2024-04-01 23:27:53,260 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :The attachment was successfully uploaded. :: : Expected Result :The attachment was successfully uploaded.
+2024-04-01 23:27:55,660 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Patient link Button
+2024-04-01 23:27:57,182 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-01 23:27:57,293 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 01.Apr.2024
+2024-04-01 23:27:57,340 - org.qa.openmrs.utils.ActionElement -INFO - Recent visit on current date is displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-01 23:27:57,518 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on Attachment section has Attachment and recent visit as one more entry in current date
+2024-04-01 23:27:57,759 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-01 23:27:57,945 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-01 23:27:58,230 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-01 23:28:00,457 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-01 23:28:00,681 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-01 23:28:06,971 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Button
+2024-04-01 23:28:07,081 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered height170in the textBox successfully
+2024-04-01 23:28:07,291 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:28:07,473 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered weight70in the textBox successfully
+2024-04-01 23:28:07,696 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:28:07,812 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - BMI calculated correctly using BMI formula: 24.2
+2024-04-01 23:28:07,947 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of calculated BMI
+2024-04-01 23:28:08,171 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-01 23:28:08,405 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Save Form
+2024-04-01 23:28:08,647 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Save Button
+2024-04-01 23:28:12,199 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-01 23:28:12,357 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-01 23:28:12,569 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-01 23:28:16,930 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-01 23:28:16,930 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-01 23:28:17,841 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed01.Apr.2024
+2024-04-01 23:28:17,888 - org.qa.openmrs.utils.ActionElement -INFO - Verified vital tag successfully: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-01 23:28:18,290 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on recent visit with current date and vitals tag
+2024-04-01 23:28:20,004 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge Visit Button
+2024-04-01 23:28:20,481 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on first merge visit CheckBox
+2024-04-01 23:28:20,702 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on second merge visit CheckBox
+2024-04-01 23:28:20,844 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on merge visit
+2024-04-01 23:28:22,671 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge selected visit
+2024-04-01 23:28:24,706 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on merge visit return button
+2024-04-01 23:28:24,885 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on merge visit return
+2024-04-01 23:28:25,598 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed01.Apr.2024
+2024-04-01 23:28:25,631 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-01 23:28:25,811 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on vitals,attachment upload
+2024-04-01 23:28:26,056 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on Add Past visit button
+2024-04-01 23:28:26,286 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on add past visit
+2024-04-01 23:28:26,345 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - The future date is disabled in the datepicker.
+2024-04-01 23:28:26,584 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Cancel Button
+2024-04-01 23:28:26,653 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100JM0
+2024-04-01 23:28:26,874 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Delete Patient Button
+2024-04-01 23:28:27,045 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-01 23:28:27,264 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered reasonThis is for testingin the textBox successfully
+2024-04-01 23:28:27,457 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on delete Patient Confirm Button
+2024-04-01 23:28:28,052 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :Patient has been deleted successfully :: : Expected Result :Patient has been deleted successfully
+2024-04-01 23:28:28,234 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-01 23:28:31,998 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100JM0in the textBox successfully
+2024-04-01 23:28:32,153 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
+2024-04-01 23:28:32,993 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Pass :: Actual Result :No matching records found :: : Expected Result :No matching records found
+2024-04-01 23:28:34,392 - org.qa.openmrs.base.BaseTest -INFO - The browser is closed
+2024-04-02 08:27:11,073 - org.qa.openmrs.base.BaseTest -INFO - Launching the chromebrowser
+2024-04-02 08:27:11,079 - org.qa.openmrs.base.BaseTest -INFO - ...Launch the OpenMRS application...
+2024-04-02 08:27:14,459 - org.qa.openmrs.base.BaseTest -INFO - Redirected to the https://qa-refapp.openmrs.org/openmrs/login.htm
+2024-04-02 08:27:14,627 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered UsernameAdminin the textBox successfully
+2024-04-02 08:27:14,748 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered PasswordAdmin123in the textBox successfully
+2024-04-02 08:27:14,820 - org.qa.openmrs.pageaction.LoginPage -INFO - Randomly Picked Location Session
+2024-04-02 08:27:14,984 - org.qa.openmrs.pageaction.LoginPage -INFO - Captured Screenshot For Login PageLoginPage
+2024-04-02 08:27:16,880 - org.qa.openmrs.pageaction.LoginPage -INFO - Clicked On Login Button
+2024-04-02 08:27:16,885 - org.qa.openmrs.utils.ActionElement -INFO - HomePage Title Verified Successfully: Pass :: Actual Result :Home :: : Expected Result :Home
+2024-04-02 08:27:16,885 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Verified and it's redirected to DashBoard Page 
+2024-04-02 08:27:17,058 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Captured Screenshot For DashBoard PageDashBoardPage
+2024-04-02 08:27:20,295 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Clicked Register a Patient Button
+2024-04-02 08:27:20,349 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered GiveNamevvin the textBox successfully
+2024-04-02 08:27:20,411 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered FamilyNamehhin the textBox successfully
+2024-04-02 08:27:20,527 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Given & Family NameregisterPatient
+2024-04-02 08:27:20,682 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:20,774 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected gender by select class
+2024-04-02 08:27:20,929 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:21,061 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for GenderregisterPatient
+2024-04-02 08:27:21,121 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthDay10in the textBox successfully
+2024-04-02 08:27:21,180 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected BirthMonth by select class
+2024-04-02 08:27:21,236 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthYear2000in the textBox successfully
+2024-04-02 08:27:21,371 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Date of BirthregisterPatient
+2024-04-02 08:27:21,533 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:21,613 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered Address13B Blockin the textBox successfully
+2024-04-02 08:27:21,705 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CityNewYorkin the textBox successfully
+2024-04-02 08:27:21,791 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered StateNYin the textBox successfully
+2024-04-02 08:27:21,875 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CountryUSin the textBox successfully
+2024-04-02 08:27:21,961 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PostalCode1022in the textBox successfully
+2024-04-02 08:27:22,109 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for AddressregisterPatient
+2024-04-02 08:27:22,276 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:22,355 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PhoneNumber9988776655in the textBox successfully
+2024-04-02 08:27:22,482 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for PhoneNumberregisterPatient
+2024-04-02 08:27:22,622 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:22,778 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:27:22,778 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - ..........Register Patient Verification.........
+2024-04-02 08:27:22,801 - org.qa.openmrs.utils.ActionElement -INFO - Given Name is verified Successfully: Pass :: Actual Result : vv, hh :: : Expected Result : vv, hh
+2024-04-02 08:27:22,816 - org.qa.openmrs.utils.ActionElement -INFO - Gender is verified Successfully: Pass :: Actual Result : Male :: : Expected Result : Male
+2024-04-02 08:27:22,833 - org.qa.openmrs.utils.ActionElement -INFO - Date of Birth is verified Successfully: Pass :: Actual Result : 10, March, 2000 :: : Expected Result : 10, March, 2000
+2024-04-02 08:27:22,856 - org.qa.openmrs.utils.ActionElement -INFO - Address is verified Successfully: Pass :: Actual Result : 13B Block, NewYork, NY, US, 1022 :: : Expected Result : 13B Block, NewYork, NY, US, 1022
+2024-04-02 08:27:22,882 - org.qa.openmrs.utils.ActionElement -INFO - PhoneNumber is verified Successfully: Pass :: Actual Result : 9988776655 :: : Expected Result : 9988776655
+2024-04-02 08:27:23,000 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured screenshot for verify register patient
+2024-04-02 08:27:23,150 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Register Patient Submit Button
+2024-04-02 08:27:23,154 - org.qa.openmrs.utils.ActionElement -INFO - Patient Page Title Is Verified Successfully: Pass :: Actual Result :OpenMRS Electronic Medical Record :: : Expected Result :OpenMRS Electronic Medical Record
+2024-04-02 08:27:32,758 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 24 year(s) ( 10.Mar.2000)
+2024-04-02 08:27:32,758 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Verified the age is Calculated based on Date of Birth
+2024-04-02 08:27:32,951 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - captured screenshot patient details pageattachmentUploadFile
+2024-04-02 08:27:33,202 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 08:27:33,406 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 08:27:38,359 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Attachment
+2024-04-02 08:27:38,473 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of AttachmentattachmentUploadFile
+2024-04-02 08:27:50,708 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Uploaded a filejava.awt.datatransfer.StringSelection@588f63c
+2024-04-02 08:27:50,802 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered captionTestingin the textBox successfully
+2024-04-02 08:27:50,923 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of uploaded file
+2024-04-02 08:27:51,094 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on upload file button
+2024-04-02 08:27:51,227 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of Toaster Message
+2024-04-02 08:27:51,466 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :The attachment was successfully uploaded. :: : Expected Result :The attachment was successfully uploaded.
+2024-04-02 08:27:53,247 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Patient link Button
+2024-04-02 08:27:54,347 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 08:27:54,376 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 02.Apr.2024
+2024-04-02 08:27:54,392 - org.qa.openmrs.utils.ActionElement -INFO - Recent visit on current date is displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 08:27:54,527 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on Attachment section has Attachment and recent visit as one more entry in current date
+2024-04-02 08:27:54,721 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 08:27:54,841 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 08:27:55,015 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 08:27:56,987 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 08:27:57,169 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 08:28:02,020 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Button
+2024-04-02 08:28:02,072 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered height170in the textBox successfully
+2024-04-02 08:28:02,215 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:28:02,282 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered weight70in the textBox successfully
+2024-04-02 08:28:02,428 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:28:02,481 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - BMI calculated correctly using BMI formula: 24.2
+2024-04-02 08:28:02,609 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of calculated BMI
+2024-04-02 08:28:02,787 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 08:28:02,946 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Save Form
+2024-04-02 08:28:03,117 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Save Button
+2024-04-02 08:28:06,020 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 08:28:06,177 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 08:28:06,330 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 08:28:09,826 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 08:28:09,827 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 08:28:10,730 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 08:28:10,749 - org.qa.openmrs.utils.ActionElement -INFO - Verified vital tag successfully: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 08:28:10,882 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on recent visit with current date and vitals tag
+2024-04-02 08:28:12,365 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge Visit Button
+2024-04-02 08:28:12,554 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on first merge visit CheckBox
+2024-04-02 08:28:12,716 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on second merge visit CheckBox
+2024-04-02 08:28:12,864 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on merge visit
+2024-04-02 08:28:14,387 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge selected visit
+2024-04-02 08:28:16,159 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on merge visit return button
+2024-04-02 08:28:16,322 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on merge visit return
+2024-04-02 08:28:17,204 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 08:28:17,224 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 08:28:17,348 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on vitals,attachment upload
+2024-04-02 08:28:17,508 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on Add Past visit button
+2024-04-02 08:28:17,649 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on add past visit
+2024-04-02 08:28:17,683 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - The future date is disabled in the datepicker.
+2024-04-02 08:28:17,890 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Cancel Button
+2024-04-02 08:28:17,922 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100JNX
+2024-04-02 08:28:18,075 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Delete Patient Button
+2024-04-02 08:28:18,197 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 08:28:18,286 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered reasonThis is for testingin the textBox successfully
+2024-04-02 08:28:18,439 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on delete Patient Confirm Button
+2024-04-02 08:28:18,976 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :Patient has been deleted successfully :: : Expected Result :Patient has been deleted successfully
+2024-04-02 08:28:19,110 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 08:28:21,781 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100JNXin the textBox successfully
+2024-04-02 08:28:21,916 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
+2024-04-02 08:28:22,667 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Pass :: Actual Result :No matching records found :: : Expected Result :No matching records found
+2024-04-02 08:28:23,130 - org.qa.openmrs.base.BaseTest -INFO - The browser is closed
+2024-04-02 09:50:09,709 - org.qa.openmrs.base.BaseTest -INFO - Launching the chromebrowser
+2024-04-02 09:50:09,712 - org.qa.openmrs.base.BaseTest -INFO - ...Launch the OpenMRS application...
+2024-04-02 09:50:13,261 - org.qa.openmrs.base.BaseTest -INFO - Redirected to the https://qa-refapp.openmrs.org/openmrs/login.htm
+2024-04-02 09:50:13,426 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered UsernameAdminin the textBox successfully
+2024-04-02 09:50:13,546 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered PasswordAdmin123in the textBox successfully
+2024-04-02 09:50:13,591 - org.qa.openmrs.pageaction.LoginPage -INFO - Randomly Picked Location Session
+2024-04-02 09:50:13,849 - org.qa.openmrs.pageaction.LoginPage -INFO - Captured Screenshot For Login PageLoginPage
+2024-04-02 09:50:15,746 - org.qa.openmrs.pageaction.LoginPage -INFO - Clicked On Login Button
+2024-04-02 09:50:15,750 - org.qa.openmrs.utils.ActionElement -INFO - HomePage Title Verified Successfully: Pass :: Actual Result :Home :: : Expected Result :Home
+2024-04-02 09:50:15,750 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Verified and it's redirected to DashBoard Page 
+2024-04-02 09:50:15,881 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Captured Screenshot For DashBoard PageDashBoardPage
+2024-04-02 09:50:21,561 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Clicked Register a Patient Button
+2024-04-02 09:50:21,613 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered GiveNamevvin the textBox successfully
+2024-04-02 09:50:21,676 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered FamilyNamehhin the textBox successfully
+2024-04-02 09:50:21,829 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Given & Family NameregisterPatient
+2024-04-02 09:50:21,984 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:22,060 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected gender by select class
+2024-04-02 09:50:22,216 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:22,359 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for GenderregisterPatient
+2024-04-02 09:50:22,434 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthDay10in the textBox successfully
+2024-04-02 09:50:22,493 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected BirthMonth by select class
+2024-04-02 09:50:22,556 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthYear2000in the textBox successfully
+2024-04-02 09:50:22,686 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Date of BirthregisterPatient
+2024-04-02 09:50:22,830 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:22,911 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered Address13B Blockin the textBox successfully
+2024-04-02 09:50:23,006 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CityNewYorkin the textBox successfully
+2024-04-02 09:50:23,075 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered StateNYin the textBox successfully
+2024-04-02 09:50:23,151 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CountryUSin the textBox successfully
+2024-04-02 09:50:23,223 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PostalCode1022in the textBox successfully
+2024-04-02 09:50:23,397 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for AddressregisterPatient
+2024-04-02 09:50:23,570 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:23,640 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PhoneNumber9988776655in the textBox successfully
+2024-04-02 09:50:23,767 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for PhoneNumberregisterPatient
+2024-04-02 09:50:23,923 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:24,095 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:50:24,095 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - ..........Register Patient Verification.........
+2024-04-02 09:50:24,122 - org.qa.openmrs.utils.ActionElement -INFO - Given Name is verified Successfully: Pass :: Actual Result : vv, hh :: : Expected Result : vv, hh
+2024-04-02 09:50:24,135 - org.qa.openmrs.utils.ActionElement -INFO - Gender is verified Successfully: Pass :: Actual Result : Male :: : Expected Result : Male
+2024-04-02 09:50:24,151 - org.qa.openmrs.utils.ActionElement -INFO - Date of Birth is verified Successfully: Pass :: Actual Result : 10, March, 2000 :: : Expected Result : 10, March, 2000
+2024-04-02 09:50:24,166 - org.qa.openmrs.utils.ActionElement -INFO - Address is verified Successfully: Pass :: Actual Result : 13B Block, NewYork, NY, US, 1022 :: : Expected Result : 13B Block, NewYork, NY, US, 1022
+2024-04-02 09:50:24,183 - org.qa.openmrs.utils.ActionElement -INFO - PhoneNumber is verified Successfully: Pass :: Actual Result : 9988776655 :: : Expected Result : 9988776655
+2024-04-02 09:50:24,300 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured screenshot for verify register patient
+2024-04-02 09:50:24,440 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Register Patient Submit Button
+2024-04-02 09:50:24,454 - org.qa.openmrs.utils.ActionElement -INFO - Patient Page Title Is Verified Successfully: Pass :: Actual Result :OpenMRS Electronic Medical Record :: : Expected Result :OpenMRS Electronic Medical Record
+2024-04-02 09:50:30,455 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 24 year(s) ( 10.Mar.2000)
+2024-04-02 09:50:30,456 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Verified the age is Calculated based on Date of Birth
+2024-04-02 09:50:30,614 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - captured screenshot patient details pageattachmentUploadFile
+2024-04-02 09:50:30,819 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:50:31,007 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:50:37,462 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Attachment
+2024-04-02 09:50:37,590 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of AttachmentattachmentUploadFile
+2024-04-02 09:50:49,820 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Uploaded a filejava.awt.datatransfer.StringSelection@5dd903be
+2024-04-02 09:50:49,945 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered captionTestingin the textBox successfully
+2024-04-02 09:50:50,073 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of uploaded file
+2024-04-02 09:50:50,235 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on upload file button
+2024-04-02 09:50:50,376 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of Toaster Message
+2024-04-02 09:50:50,701 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :The attachment was successfully uploaded. :: : Expected Result :The attachment was successfully uploaded.
+2024-04-02 09:50:52,821 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Patient link Button
+2024-04-02 09:50:53,963 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:50:53,992 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 02.Apr.2024
+2024-04-02 09:50:54,007 - org.qa.openmrs.utils.ActionElement -INFO - Recent visit on current date is displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:50:54,139 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on Attachment section has Attachment and recent visit as one more entry in current date
+2024-04-02 09:50:54,330 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:50:54,443 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:50:54,623 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:50:57,018 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:50:57,160 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:51:04,209 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Button
+2024-04-02 09:51:04,256 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered height170in the textBox successfully
+2024-04-02 09:51:04,464 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:51:04,528 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered weight70in the textBox successfully
+2024-04-02 09:51:04,680 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:51:04,711 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - BMI calculated incorrectly. Expected: 24.22145328719723524.2
+2024-04-02 09:51:04,826 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of calculated BMI
+2024-04-02 09:51:04,985 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:51:05,151 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Save Form
+2024-04-02 09:51:05,301 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Save Button
+2024-04-02 09:51:08,888 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:51:09,009 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:51:09,161 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:51:13,416 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:51:13,417 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:51:14,387 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:51:14,397 - org.qa.openmrs.utils.ActionElement -INFO - Verified vital tag successfully: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:51:14,621 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on recent visit with current date and vitals tag
+2024-04-02 09:51:16,318 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge Visit Button
+2024-04-02 09:51:16,480 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on first merge visit CheckBox
+2024-04-02 09:51:16,619 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on second merge visit CheckBox
+2024-04-02 09:51:16,820 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on merge visit
+2024-04-02 09:51:18,529 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge selected visit
+2024-04-02 09:51:20,705 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on merge visit return button
+2024-04-02 09:51:20,850 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on merge visit return
+2024-04-02 09:51:21,750 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:51:21,766 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:51:21,904 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on vitals,attachment upload
+2024-04-02 09:51:22,058 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on Add Past visit button
+2024-04-02 09:51:22,195 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on add past visit
+2024-04-02 09:51:22,217 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - The future date is disabled in the datepicker.
+2024-04-02 09:51:22,373 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Cancel Button
+2024-04-02 09:51:22,424 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HNY
+2024-04-02 09:51:22,587 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Delete Patient Button
+2024-04-02 09:51:22,738 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:51:22,790 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered reasonThis is for testingin the textBox successfully
+2024-04-02 09:51:22,953 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on delete Patient Confirm Button
+2024-04-02 09:51:23,595 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :Patient has been deleted successfully :: : Expected Result :Patient has been deleted successfully
+2024-04-02 09:51:23,753 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:51:26,027 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HNYin the textBox successfully
+2024-04-02 09:51:26,141 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
+2024-04-02 09:51:26,165 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Fail :: Actual Result : :: : Expected Result :No matching records found
+2024-04-02 09:51:26,805 - org.qa.openmrs.base.BaseTest -INFO - The browser is closed
+2024-04-02 09:54:24,159 - org.qa.openmrs.base.BaseTest -INFO - Launching the chromebrowser
+2024-04-02 09:54:24,163 - org.qa.openmrs.base.BaseTest -INFO - ...Launch the OpenMRS application...
+2024-04-02 09:54:27,501 - org.qa.openmrs.base.BaseTest -INFO - Redirected to the https://qa-refapp.openmrs.org/openmrs/login.htm
+2024-04-02 09:54:27,595 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered UsernameAdminin the textBox successfully
+2024-04-02 09:54:27,675 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered PasswordAdmin123in the textBox successfully
+2024-04-02 09:54:27,720 - org.qa.openmrs.pageaction.LoginPage -INFO - Randomly Picked Location Session
+2024-04-02 09:54:27,864 - org.qa.openmrs.pageaction.LoginPage -INFO - Captured Screenshot For Login PageLoginPage
+2024-04-02 09:54:29,651 - org.qa.openmrs.pageaction.LoginPage -INFO - Clicked On Login Button
+2024-04-02 09:54:29,658 - org.qa.openmrs.utils.ActionElement -INFO - HomePage Title Verified Successfully: Pass :: Actual Result :Home :: : Expected Result :Home
+2024-04-02 09:54:29,658 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Verified and it's redirected to DashBoard Page 
+2024-04-02 09:54:29,797 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Captured Screenshot For DashBoard PageDashBoardPage
+2024-04-02 09:54:33,243 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Clicked Register a Patient Button
+2024-04-02 09:54:33,298 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered GiveNamevvin the textBox successfully
+2024-04-02 09:54:33,365 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered FamilyNamehhin the textBox successfully
+2024-04-02 09:54:33,482 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Given & Family NameregisterPatient
+2024-04-02 09:54:33,649 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:33,719 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected gender by select class
+2024-04-02 09:54:33,879 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:34,018 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for GenderregisterPatient
+2024-04-02 09:54:34,081 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthDay10in the textBox successfully
+2024-04-02 09:54:34,135 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected BirthMonth by select class
+2024-04-02 09:54:34,195 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthYear2000in the textBox successfully
+2024-04-02 09:54:34,324 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Date of BirthregisterPatient
+2024-04-02 09:54:34,481 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:34,563 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered Address13B Blockin the textBox successfully
+2024-04-02 09:54:34,659 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CityNewYorkin the textBox successfully
+2024-04-02 09:54:34,734 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered StateNYin the textBox successfully
+2024-04-02 09:54:34,805 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CountryUSin the textBox successfully
+2024-04-02 09:54:34,869 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PostalCode1022in the textBox successfully
+2024-04-02 09:54:35,011 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for AddressregisterPatient
+2024-04-02 09:54:35,167 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:35,232 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PhoneNumber9988776655in the textBox successfully
+2024-04-02 09:54:35,371 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for PhoneNumberregisterPatient
+2024-04-02 09:54:35,526 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:35,680 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:54:35,681 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - ..........Register Patient Verification.........
+2024-04-02 09:54:35,701 - org.qa.openmrs.utils.ActionElement -INFO - Given Name is verified Successfully: Pass :: Actual Result : vv, hh :: : Expected Result : vv, hh
+2024-04-02 09:54:35,716 - org.qa.openmrs.utils.ActionElement -INFO - Gender is verified Successfully: Pass :: Actual Result : Male :: : Expected Result : Male
+2024-04-02 09:54:35,731 - org.qa.openmrs.utils.ActionElement -INFO - Date of Birth is verified Successfully: Pass :: Actual Result : 10, March, 2000 :: : Expected Result : 10, March, 2000
+2024-04-02 09:54:35,753 - org.qa.openmrs.utils.ActionElement -INFO - Address is verified Successfully: Pass :: Actual Result : 13B Block, NewYork, NY, US, 1022 :: : Expected Result : 13B Block, NewYork, NY, US, 1022
+2024-04-02 09:54:35,772 - org.qa.openmrs.utils.ActionElement -INFO - PhoneNumber is verified Successfully: Pass :: Actual Result : 9988776655 :: : Expected Result : 9988776655
+2024-04-02 09:54:35,892 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured screenshot for verify register patient
+2024-04-02 09:54:36,059 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Register Patient Submit Button
+2024-04-02 09:54:36,063 - org.qa.openmrs.utils.ActionElement -INFO - Patient Page Title Is Verified Successfully: Pass :: Actual Result :OpenMRS Electronic Medical Record :: : Expected Result :OpenMRS Electronic Medical Record
+2024-04-02 09:54:40,891 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 24 year(s) ( 10.Mar.2000)
+2024-04-02 09:54:40,891 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Verified the age is Calculated based on Date of Birth
+2024-04-02 09:54:41,089 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - captured screenshot patient details pageattachmentUploadFile
+2024-04-02 09:54:41,287 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:54:41,454 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:54:47,290 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Attachment
+2024-04-02 09:54:47,421 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of AttachmentattachmentUploadFile
+2024-04-02 09:54:59,653 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Uploaded a filejava.awt.datatransfer.StringSelection@144ab54
+2024-04-02 09:54:59,747 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered captionTestingin the textBox successfully
+2024-04-02 09:54:59,872 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of uploaded file
+2024-04-02 09:55:00,062 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on upload file button
+2024-04-02 09:55:00,208 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of Toaster Message
+2024-04-02 09:55:00,452 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :The attachment was successfully uploaded. :: : Expected Result :The attachment was successfully uploaded.
+2024-04-02 09:55:02,611 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Patient link Button
+2024-04-02 09:55:03,755 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:55:03,805 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 02.Apr.2024
+2024-04-02 09:55:03,805 - org.qa.openmrs.utils.ActionElement -INFO - Recent visit on current date is displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:55:03,923 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on Attachment section has Attachment and recent visit as one more entry in current date
+2024-04-02 09:55:04,120 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:55:04,241 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:55:04,393 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:55:06,570 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:55:06,725 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:55:12,713 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Button
+2024-04-02 09:55:12,761 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered height170in the textBox successfully
+2024-04-02 09:55:12,915 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:55:12,977 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered weight70in the textBox successfully
+2024-04-02 09:55:13,131 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:55:13,163 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - BMI calculated incorrectly. Expected: 24.22145328719723524.2
+2024-04-02 09:55:13,275 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of calculated BMI
+2024-04-02 09:55:13,438 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:55:13,627 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Save Form
+2024-04-02 09:55:13,785 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Save Button
+2024-04-02 09:55:17,003 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:55:17,158 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:55:17,332 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:55:20,919 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:55:20,919 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:55:21,818 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:55:21,845 - org.qa.openmrs.utils.ActionElement -INFO - Verified vital tag successfully: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:55:22,008 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on recent visit with current date and vitals tag
+2024-04-02 09:55:23,609 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge Visit Button
+2024-04-02 09:55:23,802 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on first merge visit CheckBox
+2024-04-02 09:55:23,957 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on second merge visit CheckBox
+2024-04-02 09:55:24,083 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on merge visit
+2024-04-02 09:55:25,569 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge selected visit
+2024-04-02 09:55:27,293 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on merge visit return button
+2024-04-02 09:55:27,483 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on merge visit return
+2024-04-02 09:55:28,200 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:55:28,218 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:55:28,411 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on vitals,attachment upload
+2024-04-02 09:55:28,585 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on Add Past visit button
+2024-04-02 09:55:28,784 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on add past visit
+2024-04-02 09:55:28,805 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - The future date is disabled in the datepicker.
+2024-04-02 09:55:28,975 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Cancel Button
+2024-04-02 09:55:29,001 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HPW
+2024-04-02 09:55:29,169 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Delete Patient Button
+2024-04-02 09:55:29,377 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:55:29,438 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered reasonThis is for testingin the textBox successfully
+2024-04-02 09:55:29,595 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on delete Patient Confirm Button
+2024-04-02 09:55:30,174 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :Patient has been deleted successfully :: : Expected Result :Patient has been deleted successfully
+2024-04-02 09:55:30,323 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:55:32,561 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HPWin the textBox successfully
+2024-04-02 09:55:32,709 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
+2024-04-02 09:55:32,737 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Fail :: Actual Result : :: : Expected Result :No matching records found
+2024-04-02 09:55:33,415 - org.qa.openmrs.base.BaseTest -INFO - The browser is closed
+2024-04-02 09:58:33,125 - org.qa.openmrs.base.BaseTest -INFO - Launching the chromebrowser
+2024-04-02 09:58:33,129 - org.qa.openmrs.base.BaseTest -INFO - ...Launch the OpenMRS application...
+2024-04-02 09:58:38,690 - org.qa.openmrs.base.BaseTest -INFO - Redirected to the https://qa-refapp.openmrs.org/openmrs/login.htm
+2024-04-02 09:58:38,782 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered UsernameAdminin the textBox successfully
+2024-04-02 09:58:38,861 - org.qa.openmrs.pageaction.LoginPage -INFO - Entered PasswordAdmin123in the textBox successfully
+2024-04-02 09:58:38,906 - org.qa.openmrs.pageaction.LoginPage -INFO - Randomly Picked Location Session
+2024-04-02 09:58:39,088 - org.qa.openmrs.pageaction.LoginPage -INFO - Captured Screenshot For Login PageLoginPage
+2024-04-02 09:58:41,003 - org.qa.openmrs.pageaction.LoginPage -INFO - Clicked On Login Button
+2024-04-02 09:58:41,007 - org.qa.openmrs.utils.ActionElement -INFO - HomePage Title Verified Successfully: Pass :: Actual Result :Home :: : Expected Result :Home
+2024-04-02 09:58:41,007 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Verified and it's redirected to DashBoard Page 
+2024-04-02 09:58:41,163 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Captured Screenshot For DashBoard PageDashBoardPage
+2024-04-02 09:58:44,857 - org.qa.openmrs.pageaction.DashBoardPage -INFO - Clicked Register a Patient Button
+2024-04-02 09:58:44,914 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered GiveNamevvin the textBox successfully
+2024-04-02 09:58:44,976 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered FamilyNamehhin the textBox successfully
+2024-04-02 09:58:45,093 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Given & Family NameregisterPatient
+2024-04-02 09:58:45,246 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:45,316 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected gender by select class
+2024-04-02 09:58:45,503 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:45,641 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for GenderregisterPatient
+2024-04-02 09:58:45,697 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthDay10in the textBox successfully
+2024-04-02 09:58:45,748 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Selected BirthMonth by select class
+2024-04-02 09:58:45,809 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered BirthYear2000in the textBox successfully
+2024-04-02 09:58:45,953 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for Date of BirthregisterPatient
+2024-04-02 09:58:46,117 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:46,199 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered Address13B Blockin the textBox successfully
+2024-04-02 09:58:46,298 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CityNewYorkin the textBox successfully
+2024-04-02 09:58:46,394 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered StateNYin the textBox successfully
+2024-04-02 09:58:46,485 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered CountryUSin the textBox successfully
+2024-04-02 09:58:46,555 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PostalCode1022in the textBox successfully
+2024-04-02 09:58:46,706 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for AddressregisterPatient
+2024-04-02 09:58:46,859 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:46,938 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Entered PhoneNumber9988776655in the textBox successfully
+2024-04-02 09:58:47,066 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured ScreenShot for PhoneNumberregisterPatient
+2024-04-02 09:58:47,232 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:47,392 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:58:47,393 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - ..........Register Patient Verification.........
+2024-04-02 09:58:47,412 - org.qa.openmrs.utils.ActionElement -INFO - Given Name is verified Successfully: Pass :: Actual Result : vv, hh :: : Expected Result : vv, hh
+2024-04-02 09:58:47,429 - org.qa.openmrs.utils.ActionElement -INFO - Gender is verified Successfully: Pass :: Actual Result : Male :: : Expected Result : Male
+2024-04-02 09:58:47,445 - org.qa.openmrs.utils.ActionElement -INFO - Date of Birth is verified Successfully: Pass :: Actual Result : 10, March, 2000 :: : Expected Result : 10, March, 2000
+2024-04-02 09:58:47,463 - org.qa.openmrs.utils.ActionElement -INFO - Address is verified Successfully: Pass :: Actual Result : 13B Block, NewYork, NY, US, 1022 :: : Expected Result : 13B Block, NewYork, NY, US, 1022
+2024-04-02 09:58:47,480 - org.qa.openmrs.utils.ActionElement -INFO - PhoneNumber is verified Successfully: Pass :: Actual Result : 9988776655 :: : Expected Result : 9988776655
+2024-04-02 09:58:47,578 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Captured screenshot for verify register patient
+2024-04-02 09:58:47,724 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Register Patient Submit Button
+2024-04-02 09:58:47,727 - org.qa.openmrs.utils.ActionElement -INFO - Patient Page Title Is Verified Successfully: Pass :: Actual Result :OpenMRS Electronic Medical Record :: : Expected Result :OpenMRS Electronic Medical Record
+2024-04-02 09:58:52,884 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 24 year(s) ( 10.Mar.2000)
+2024-04-02 09:58:52,884 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Verified the age is Calculated based on Date of Birth
+2024-04-02 09:58:53,075 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - captured screenshot patient details pageattachmentUploadFile
+2024-04-02 09:58:53,274 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:58:53,454 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:58:58,621 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Attachment
+2024-04-02 09:58:58,755 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of AttachmentattachmentUploadFile
+2024-04-02 09:59:10,987 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Uploaded a filejava.awt.datatransfer.StringSelection@33425811
+2024-04-02 09:59:11,082 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered captionTestingin the textBox successfully
+2024-04-02 09:59:11,222 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of uploaded file
+2024-04-02 09:59:11,383 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on upload file button
+2024-04-02 09:59:11,525 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of Toaster Message
+2024-04-02 09:59:11,767 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :The attachment was successfully uploaded. :: : Expected Result :The attachment was successfully uploaded.
+2024-04-02 09:59:13,822 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Patient link Button
+2024-04-02 09:59:14,992 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:59:15,024 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Age calculated correctly: 02.Apr.2024
+2024-04-02 09:59:15,040 - org.qa.openmrs.utils.ActionElement -INFO - Recent visit on current date is displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:59:15,166 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on Attachment section has Attachment and recent visit as one more entry in current date
+2024-04-02 09:59:15,317 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:59:15,442 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:59:15,597 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:59:18,036 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit button
+2024-04-02 09:59:18,214 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on start visit confirm button
+2024-04-02 09:59:24,412 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Button
+2024-04-02 09:59:24,467 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered height170in the textBox successfully
+2024-04-02 09:59:24,613 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:59:24,682 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered weight70in the textBox successfully
+2024-04-02 09:59:24,831 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:59:24,871 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - BMI calculated correctly using BMI formula: 24.2
+2024-04-02 09:59:24,992 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot of calculated BMI
+2024-04-02 09:59:25,168 - org.qa.openmrs.pageaction.RegisterPatientPage -INFO - Clicked On Right Submit Button
+2024-04-02 09:59:25,326 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Save Form
+2024-04-02 09:59:25,483 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Vitals Save Button
+2024-04-02 09:59:28,486 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Button
+2024-04-02 09:59:28,653 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on End Visit Button
+2024-04-02 09:59:28,815 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked On End Visit Confirm Button
+2024-04-02 09:59:32,986 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:59:32,986 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked and Redirected to Patient Details Screen
+2024-04-02 09:59:33,967 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:59:33,990 - org.qa.openmrs.utils.ActionElement -INFO - Verified vital tag successfully: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:59:34,195 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on recent visit with current date and vitals tag
+2024-04-02 09:59:35,902 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge Visit Button
+2024-04-02 09:59:36,078 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on first merge visit CheckBox
+2024-04-02 09:59:36,246 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on second merge visit CheckBox
+2024-04-02 09:59:36,409 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on merge visit
+2024-04-02 09:59:38,034 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on merge selected visit
+2024-04-02 09:59:40,038 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on merge visit return button
+2024-04-02 09:59:40,203 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on merge visit return
+2024-04-02 09:59:41,100 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Recent visit on current date is displayed02.Apr.2024
+2024-04-02 09:59:41,126 - org.qa.openmrs.utils.ActionElement -INFO - Attachment displayed: Pass :: Actual Result :true :: : Expected Result :true
+2024-04-02 09:59:41,374 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on vitals,attachment upload
+2024-04-02 09:59:41,552 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - clicked on Add Past visit button
+2024-04-02 09:59:41,719 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured screenshot on add past visit
+2024-04-02 09:59:41,742 - org.qa.openmrs.pageaction.PatientDetailsPage -ERROR - The future date is disabled in the datepicker.
+2024-04-02 09:59:41,908 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Cancel Button
+2024-04-02 09:59:41,934 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HRU
+2024-04-02 09:59:42,117 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on Delete Patient Button
+2024-04-02 09:59:42,269 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:59:42,323 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Entered reasonThis is for testingin the textBox successfully
+2024-04-02 09:59:42,472 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Clicked on delete Patient Confirm Button
+2024-04-02 09:59:42,995 - org.qa.openmrs.utils.ActionElement -INFO - verified toaster message: Pass :: Actual Result :Patient has been deleted successfully :: : Expected Result :Patient has been deleted successfully
+2024-04-02 09:59:43,183 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on delete patient
+2024-04-02 09:59:45,475 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Patient Id 100HRUin the textBox successfully
+2024-04-02 09:59:45,645 - org.qa.openmrs.pageaction.PatientDetailsPage -INFO - Captured Screenshot on deleted Patient match record
+2024-04-02 09:59:45,668 - org.qa.openmrs.utils.ActionElement -INFO - no matches found Successfully: Fail :: Actual Result : :: : Expected Result :No matching records found
+2024-04-02 09:59:46,345 - org.qa.openmrs.base.BaseTest -INFO - The browser is closed

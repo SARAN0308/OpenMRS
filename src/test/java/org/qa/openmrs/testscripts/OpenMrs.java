@@ -1,11 +1,12 @@
 package org.qa.openmrs.testscripts;
 
-import org.qa.openmrs.base.BaseTest;
 import org.qa.openmrs.pageaction.DashBoardPage;
 import org.qa.openmrs.pageaction.LoginPage;
 import org.qa.openmrs.pageaction.PatientDetailsPage;
 import org.qa.openmrs.pageaction.RegisterPatientPage;
 import org.testng.annotations.Test;
+import static org.qa.openmrs.base.BaseTest.browserLaunch;
+import static org.qa.openmrs.base.BaseTest.tearDown;
 
 public class OpenMrs  {
     LoginPage loginPage = new LoginPage();
@@ -15,7 +16,7 @@ public class OpenMrs  {
 
     @Test
     public void openMrsTest() {
-        BaseTest.browserLaunch("chrome");
+        browserLaunch("chrome");
 
         loginPage.login("username","password","LoginPage");
 
@@ -32,6 +33,8 @@ public class OpenMrs  {
         patientDetailsPage.verifyEndMergeAddPastVisit("endMergeAddPastVisit");
 
         patientDetailsPage.verifyDeletedPatientID("reason","deletedPatientId");
+
+        tearDown();
 
     }
 }
